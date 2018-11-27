@@ -1,15 +1,16 @@
+import random
+
 def main():
     # members.txtを開く
-    f = open("members.txt", mode="r")
+    with open("members.txt", mode="r") as f:
+        members_text = f.read()
 
-    # 参加者名を読み込む
-    name = f.read()
+        # 参加者の情報を一つ一つ取得したいため、リスト化する
+        members_list = members_text.split("\n")
 
     # 参加者の名前をとりあえず表示させたい
-    print(name)
+    print(members_list)
 
-    # ファイルを閉じる
-    f.close()
 
 if __name__ == "__main__":
     main()
