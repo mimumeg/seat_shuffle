@@ -13,6 +13,7 @@ def main():
     table2 = []
     table3 = []
 
+    # 人数の分だけ繰り返すようにカウンターを作成
     counter1 = 0
     counter2 = 0
     counter3 = 0
