@@ -1,5 +1,6 @@
 import random
 
+
 def main():
     # members.txtを開く
     with open("members.txt", mode="r") as f:
@@ -71,10 +72,10 @@ def main():
     final_results3 = ", ".join(table3)
 
     # シャッフル結果を表示。
-    print(f"--------席替えアプリ--------")
     print(f"テーブル1：{final_results1}")
     print(f"テーブル2：{final_results2}")
     print(f"テーブル3：{final_results3}")
+
 
 if __name__ == "__main__":
     main()
